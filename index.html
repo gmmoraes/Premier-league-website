@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+<script src="dist/bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="style/css/main.css">
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<title>To do app</title>
+</head>
+
+<body>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <div>
+    <nav class="navbar navbar-inverse" id="navbarTop">
+      <div class="container-fluid" id=navbarTopContainer>
+        <ul class="nav navbar-nav">
+          <li class="active" id="leagueRankingNav"><a href="#">League Rank</a></li>
+          <li id="schedulesNav"><a href="#">Schedule</a></li>
+          <li id="mapNav"><a href="#">Map</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class=container id="rankContainer">
+      <h1> <b>Table</b> </h1>
+      <h1><b>Fixture</b> </h1>
+      <table class="table table-bordered  table-condensed table-responsive"  id="tableRank">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th>team name</th>
+              <th>played games</th>
+              <th>points</th>
+              <th>goals</th>
+              <th>golas against</th>
+              <th>goals difference</th>
+              <th>wins</th>
+              <th>draws</th>
+              <th>loses</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyRank">
+          </tbody>
+        </table>
+
+
+
+</body>
+</html>

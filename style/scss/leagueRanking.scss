@@ -1,0 +1,34 @@
+$navbar-point: #70708e;
+$championsleague: #c8dcec;
+
+#rankContainer {
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  padding-top: 150px;
+  margin-top: -100px;
+}
+
+#logo{
+  width:35px;
+  height:35px;
+}
+
+th{
+  background-color: $navbar-point;
+  color: white;
+}
+
+#tableRank tr:nth-child(2), #tableRank tr:nth-child(3), #tableRank tr:nth-child(4), #tableRank tr:nth-child(5){
+  background-color: $championsleague;
+}
+
+#tableRank tr:nth-child(1) {
+  background-color: rgb(30, 80, 139);
+  color: white;
+}
+
+#tableRank tr:nth-child(18), #tableRank tr:nth-child(19), #tableRank tr:nth-child(20) {
+  background-color: rgb(232, 70, 70);
+  color: white;
+}

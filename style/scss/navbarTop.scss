@@ -1,0 +1,23 @@
+$navbar-color: #e00034;
+.nav {
+  color: white;
+}
+
+#navbarTop{
+  border-color: white;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#leagueRankingNav{
+  background-color: $navbar-color;
+  color: white;
+}
+
+#navbarTopContainer{
+  background-color: $navbar-color;
+}
+
+#leagueRankingNav, #schedulesNav, #mapNav{
+  color: white;
+}

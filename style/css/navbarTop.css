@@ -1,0 +1,17 @@
+.nav {
+  color: white; }
+
+#navbarTop {
+  border-color: white;
+  width: 70%;
+  margin: 0 auto; }
+
+#leagueRankingNav {
+  background-color: #e00034;
+  color: white; }
+
+#navbarTopContainer {
+  background-color: #e00034; }
+
+#leagueRankingNav, #schedulesNav, #mapNav {
+  color: white; }

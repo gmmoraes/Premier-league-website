@@ -1,0 +1,5 @@
+@import url("navbarTop.css");
+@import url("leagueRanking.css");
+@import url("schedule.css");
+body {
+  background-color: #c8c8d1; }

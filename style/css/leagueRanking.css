@@ -1,0 +1,25 @@
+#rankContainer {
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  padding-top: 150px;
+  margin-top: -100px; }
+
+#logo {
+  width: 35px;
+  height: 35px; }
+
+th {
+  background-color: #70708e;
+  color: white; }
+
+#tableRank tr:nth-child(2), #tableRank tr:nth-child(3), #tableRank tr:nth-child(4), #tableRank tr:nth-child(5) {
+  background-color: #c8dcec; }
+
+#tableRank tr:nth-child(1) {
+  background-color: #1e508b;
+  color: white; }
+
+#tableRank tr:nth-child(18), #tableRank tr:nth-child(19), #tableRank tr:nth-child(20) {
+  background-color: #e84646;
+  color: white; }
