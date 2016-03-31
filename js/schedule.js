@@ -7,7 +7,7 @@ function schedule(){
   }).done(function(response) {
     for (i = 218; i < 380; i++) {
       $('#tbodySchedule').append('<tr id="trSchedule">' + '<td>' + response.fixtures[i].date.substring(0, 10) + " " + response.fixtures[i].date.substring(11, 16)  + '</td>' +
-      '<td>' + response.fixtures[i].homeTeamName + '</td>'+ '<td>' + "vs" + '</td>' +
+      '<td id="a">' + response.fixtures[i].homeTeamName + '</td>'+ '<td>' + "vs" + '</td>' +
       '<td>' + response.fixtures[i].awayTeamName + '</td>'+
       '<td id="scheduleStatus">' + response.fixtures[i].status + '</td>'+
       '<td>' + '<a href="#" id="'+ response.fixtures[i].homeTeamName.substring(0, 3) +'">' + response.fixtures[i].homeTeamName +'</a>' + '</td>'+ '</tr>');

@@ -1,0 +1,105 @@
+{"stadiums":{
+    "anfield": {
+        "lat": 54.914740,
+        "long": -1.388371,
+        "locations":" Liverpool"
+    },
+    "Carrow Road": {
+        "lat": 52.622205,
+        "long": 1.309150,
+        "locations":"Norwich"
+
+    },
+    "The Hawthorns": {
+        "lat": 52.509207,
+        "long": -1.963967,
+        "locations":"West Bromwich"
+    },
+    "Selhurst Park": {
+        "lat": 51.398474,
+        "long": -0.085485,
+        "locations":"London"
+    },
+    "King Power Stadium": {
+        "lat": 52.620596,
+        "long": -1.142220,
+        "locations":"Leicester"
+    },
+    "Old Trafford": {
+        "lat": 53.463212,
+        "long": -2.291254,
+        "locations":"Manchester"
+    },
+    "Vicarage Road": {
+        "lat": 51.650099,
+        "long": -0.401566,
+        "locations":"Watford"
+    },
+    "Boleyn Ground": {
+        "lat": 51.532137,
+        "long": 0.039402,
+        "locations":"London"
+    },
+    "Goodison Park": {
+        "lat": 53.438953,
+        "long": -2.966470,
+        "locations":"Liverpool"
+    },
+    "Emirates Stadium": {
+        "lat": 51.555122,
+        "long": -0.108459,
+        "locations":"London"
+    },
+    "Liberty Stadium": {
+        "lat": 51.642904,
+        "long": -3.935296,
+        "locations":"Swansea"
+    },
+    "Anfield": {
+        "lat": 53.431015,
+        "long": -2.960851,
+        "locations":"Liverpool"
+    },
+    "Britannia Stadium": {
+        "lat": 52.988413,
+        "long": -2.175443,
+        "locations":"Staffordshire"
+    },
+    "White Hart Lane": {
+        "lat": 51.603379,
+        "long": -0.065728,
+        "locations":"London"
+    },
+    "St. Jamess Park": {
+        "lat": 54.975735,
+        "long": -1.621742,
+        "locations":"London"
+    },
+    "Dean Court": {
+        "lat": 50.735394,
+        "long": -1.838293,
+        "locations":"Bournemouth"
+    },
+    "Stamford Bridge": {
+        "lat": 51.481843,
+        "long": -0.190999,
+        "locations":"London"
+    },
+    "Etihad Stadium": {
+        "lat": 53.483368,
+        "long": -2.200438,
+        "locations":"Manchester"
+    },
+    "St Marys Stadium": {
+        "lat": 50.905548,
+        "long": -1.391195,
+        "locations":"Southampton"
+    },
+    "Villa Park": {
+        "lat": 52.509236,
+        "long": -1.884751,
+        "locations":"Birmingham"
+    }
+}
+
+}

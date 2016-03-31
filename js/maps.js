@@ -1,17 +1,61 @@
 function maps(){
-  var anfield = {
-    center:new google.maps.LatLng(53.430967, -2.960835),
-    zoom: 17,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var stadiumOfLight = {
-    center:new google.maps.LatLng(1, 1),
-    zoom: 17,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById("map"), anfield);
-  map1 = new google.maps.Map(document.getElementById("map-canvas"), stadiumOfLight);
-}
+  $.ajax({
+    url: 'js/stadium.json',
+    dataType: 'json',
+    type: 'GET',
+  }).done(function(response) {
+    var name = window.location.hash.substring(1);
+    var latlngs = response.stadiums;
+    lat1 = latlngs[name].lat;
+    long1 = latlngs[name].long;
+    //var lat2 = response.users[1].joined;
 
+
+  console.log(lat1);
+
+
+  var counter = (function(){
+    var i = 0;
+    var a = 0;
+
+    return {
+      get: function(){
+        return i;
+        return a;
+      },
+      set: function( val, val2 ){
+        i = val;
+        a = val2;
+        var anfield = {
+        center:new google.maps.LatLng(i, a),
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP};
+
+        map = new google.maps.Map(document.getElementById("map"), anfield);
+        trafficLayer = new google.maps.TrafficLayer();
+        //google.maps.event.addDomListener(document.getElementById('trafficToggle'), 'click', toggleTraffic);
+        var CenterControl  = require('./CenterControl.js');
+        var centerControlDiv = document.createElement('div');
+        var centerControl = new CenterControl(centerControlDiv, map);
+
+        var WeatherControl  = require('./WeatherControl.js');
+        var weatherDiv = document.createElement('div');
+        var weatherControl = new WeatherControl(weatherDiv, map);
+
+        centerControlDiv.index = 2;
+        weatherDiv.index = 1;
+        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(weatherDiv);
+        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
+        //var trafficLayer = new google.maps.TrafficLayer();
+        //trafficLayer.setMap(map);
+        //var weatherApi = require('./weatherApi.js');
+        //weatherApi();
+      }(lat1,long1),
+    };
+  })();
+  });
+
+
+}
 
 module.exports = maps;

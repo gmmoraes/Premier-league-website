@@ -19,6 +19,7 @@
 
   <nav class="navbar navbar-inverse" id="navbarTop">
     <div class="container-fluid" id=navbarTopContainer>
+      <div class="navbar-brand" id="logoPremier" href="#"><img src="style/img/e3.jpg" alt=""></div>
       <ul class="nav navbar-nav">
         <li id="leagueRankingNav"><a href="#">League Rank</a></li>
         <li class="active" id="schedulesNav"><a href="#">Schedule</a></li>
@@ -28,7 +29,9 @@
   </nav>
 
 
+
 <div class=container id="scheduleContainer">
+  <input type="text" id="filter"/>
   <table class="table table-striped table-responsive" id="scheduleClass" >
       <thead>
         <tr>
@@ -40,7 +43,7 @@
           <th id="stadium">stadium</th>
         </tr>
       </thead>
-      <tbody id="tbodySchedule">
+      <tbody id="tbodySchedule" class="list">
       </tbody>
     </div>
 
