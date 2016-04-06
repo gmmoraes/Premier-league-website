@@ -22,7 +22,7 @@ function weatherApi(){
         mapMain = response.list[0].weather[0].main;
       }
       console.log(mapDescription);
-    var marker = new google.maps.Marker({
+    window.marker = new google.maps.Marker({
      position: myLatLng,
      map: map,
      title: 'weather',

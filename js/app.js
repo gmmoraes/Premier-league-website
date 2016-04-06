@@ -8,6 +8,8 @@ var leagueRankingNav  = require('./leagueRankingNav.js');
 var maps  = require('./maps.js');
 var mapNav  = require('./mapNav.js');
 var tableFilter  = require('./tableFilter.js');
+var accomodationNav  = require('./accomodationNav.js');
+var hotelApi  = require('./hotelApi.js');
 page = require('page');
 //var routes  = require('./routes.js');
 
@@ -23,5 +25,7 @@ $(function(){
   mapNav();
   maps();
   tableFilter();
+  accomodationNav();
+  hotelApi();
   //routes();
 });

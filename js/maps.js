@@ -8,6 +8,7 @@ function maps(){
     var latlngs = response.stadiums;
     lat1 = latlngs[name].lat;
     long1 = latlngs[name].long;
+    window.myLatLng = {lat: lat1, lng: long1};
     //var lat2 = response.users[1].joined;
 
 
@@ -42,10 +43,17 @@ function maps(){
         var weatherDiv = document.createElement('div');
         var weatherControl = new WeatherControl(weatherDiv, map);
 
+
+        var restaurantControl  = require('./restaurantControl.js');
+        var restaurantDiv = document.createElement('div');
+        var restaurantControl = new restaurantControl(restaurantDiv, map);
+
+        restaurantDiv.index = 3;
         centerControlDiv.index = 2;
         weatherDiv.index = 1;
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(weatherDiv);
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
+        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(restaurantDiv);
         //var trafficLayer = new google.maps.TrafficLayer();
         //trafficLayer.setMap(map);
         //var weatherApi = require('./weatherApi.js');
@@ -54,8 +62,6 @@ function maps(){
     };
   })();
   });
-
-
 }
 
 module.exports = maps;

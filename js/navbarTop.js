@@ -11,6 +11,9 @@ function navbarTop(){
     $('#navbarTop').find('.active').removeClass('active');
     $(this).parent().addClass('active');
   });
+  $('#accomodationNav a').click(function(){
+    $('#navbarTop').find('.active').removeClass('active');
+    $(this).parent().addClass('active');
+  });
 }
-
 module.exports = navbarTop;

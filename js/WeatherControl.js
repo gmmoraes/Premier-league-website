@@ -25,19 +25,26 @@ controlText.style.paddingRight = '5px';
 controlText.innerHTML = 'Weather';
 controlUI.appendChild(controlText);
 
+var weatherApi = require('./weatherApi.js');
 
 // Setup the click event listeners: simply set the map to Chicago.
 controlUI.addEventListener('click', function() {
-  var weatherApi = require('./weatherApi.js');
-  weatherApi();
   if (weatherIconToogle == 0){
-    weatherIconToogle = weatherIconToogle +1;
-  }else{
-    weatherIconToogle = weatherIconToogle -1;
+    weatherApi();
   }
+
+  weatherIconToogle =1;
+  toogleWeather();
 });
 
 
+function toogleWeather(){
+  if(marker.getMap() == null){
+      marker.setMap(map);
+  } else {
+      marker.setMap(null);
+  }
+}
 
 }
 

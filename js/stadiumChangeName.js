@@ -1,5 +1,5 @@
 function stadiumChangeName(){
-  stadiums = ['Emirates Stadium', 'Villa Park', 'Dean Court', 'Stamford Bridge', 'Selhurst Park', 'Goodison Park', 'King Power Stadium', 'Anfield', 'Etihad Stadium', 'Old Trafford',
+  window.stadiums = ['Emirates Stadium', 'Villa Park', 'Dean Court', 'Stamford Bridge', 'Selhurst Park', 'Goodison Park', 'King Power Stadium', 'Anfield', 'Etihad Stadium', 'Old Trafford',
 'St. Jamess Park', 'Carrow Road', 'St Marys Stadium', 'Britannia Stadium', 'Stadium of Light', 'Liberty Stadium', '	White Hart Lane', 'Vicarage Road',
 'The Hawthorns', 'Boleyn Ground'];
   $( "a:contains('Sunderland AFC')" ).text(stadiums[14]).click(function(){

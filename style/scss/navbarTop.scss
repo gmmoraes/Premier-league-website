@@ -1,23 +1,39 @@
-$navbar-color: #e00034;
-.nav {
-  color: white;
-}
+//$navbar-color: #e00034;
+$navbar-color: rgb(255,2,90);
+$navbar-letter: rgb(55,0,60);
+
 
 #navbarTop{
   border-color: white;
   width: 70%;
   margin: 0 auto;
+  background-color: white;
 }
 
 #leagueRankingNav{
   background-color: $navbar-color;
   color: white;
+  margin-left: 500px;
 }
 
 #navbarTopContainer{
   background-color: $navbar-color;
 }
 
-#leagueRankingNav, #schedulesNav, #mapNav{
-  color: white;
+#schedulesNav a, #leagueRankingNav a{
+  color: $navbar-letter;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 30px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+h3{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: $navbar-letter;
+  font-weight: 700;
+  position: relative;
+  left: -70px;
+  top: 50px;
 }
